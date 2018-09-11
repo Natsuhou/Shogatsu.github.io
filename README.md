@@ -1,2 +1,2 @@
-# MatthewTakara
-My school website!
+# Matthew Takara
+Hi, welcome to my website repository.
