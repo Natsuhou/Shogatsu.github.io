@@ -8,4 +8,8 @@ This website uses:
 - HTML5/HTML
 - Particle.js (library)
 
-![Bootstrap5](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/600px-HTML5_Badge.svg.png)
+## To Do List
+1. Organize files by tab []
+2. Add more content []
+3. Refine design flaws []
+4. Improve responsiveness and scalability []
