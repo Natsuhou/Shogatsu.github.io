@@ -9,7 +9,7 @@ This website uses:
 - Particle.js (library)
 
 ## To Do List
-1. Organize files by tab [:)]
-2. Add more content []
-3. Refine design flaws []
-4. Improve responsiveness and scalability []
+1. Organize files by tab [x]
+2. Add more content [x]
+3. Refine design flaws [x]
+4. Improve responsiveness and scalability [x]
