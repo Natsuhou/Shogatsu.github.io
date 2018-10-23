@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shogatsu</title>
+    <meta name="author" content="Matthew Takara">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="shogatsu.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="navigation" class="sidenav navbar-collapse">
+        <a href="Home/index.html">About</a>
+        <a href="Projects/projects.html">Projects</a>
+        <a href="Activities/activities.html">Activities</a>
+        <a href="Fun/fun.html">Fun</a>
+    </div>
+    <div id="particles-js">
+        <div class="main">
+            <h2 class="display-2">Shogatsu</h2>
+        </div>
+    </div>
+    <nav class="navbar fixed-top">
+        <span style="font-size:35px;cursor:pointer; color: white;" onclick="openNav()" ondblclick="closeNav()">&#9776;</span>
+    </nav>
+    <div id="about" class="card">
+        <div class="card-title" style="text-align: center">
+            <h1 class="display-3">About Me</h1>
+            <p class="card-body">
+                Hello my name is Matthew Takara and I like creating random stuff such as websites, video games and even
+                neural networks!
+                I do a bunch of random stuff at times because I either get bored or something else like that.
+                Regarding hobbies and what not, I like to run and play video games.
+            </p>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+        function () {
+            console.log('particles.json loaded...')
+        })
+
+    function openNav() {
+        document.getElementById("navigation").style.width = "200px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("navigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }   
+</script>
+
+</html>
