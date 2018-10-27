@@ -1,0 +1,165 @@
+/* The side navigation menu */
+.sidenav {
+    height: 30%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.075); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 65px; /* Place content 60px from the top */
+    transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 1px 5px 5px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f7b7b7da;
+    text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+#particles-js {
+    height: 100vh;
+}
+.main {
+    color: #eeeeee;
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    width: 100%;
+    line-height: 0.4em;
+  }
+body {
+    animation: 250s ease-in-out infinite color-change;
+  }
+
+.color {
+  animation: 500s ease-in-out infinite color;
+}
+
+@keyframes color-change {
+    0% {
+      background-color: rgb(72, 172, 172);
+    }
+    20% {
+      background-color: rgb(184, 170, 90);
+    }
+    40% {
+      background-color: rgb(143, 71, 71);
+    }
+    60% {
+      background-color: violet;
+    }
+    80% {
+      background-color: rgb(71, 119, 71);
+    }
+    100% {
+      background-color: teal;
+    }
+  }
+
+ @keyframes color {
+    0% {
+      background-color: rgb(190, 245, 182);
+    }
+    20% {
+      background-color: rgb(137, 243, 120);
+    }
+    40% {
+      background-color: rgb(109, 184, 98);
+    }
+    60% {
+      background-color: rgb(84, 177, 70);
+    }
+    80% {
+      background-color: rgb(71, 119, 71);
+    }
+    100% {
+      background-color: rgb(31, 107, 19);
+    }
+  }
+
+.rounded {
+  border-radius: 10%;
+  border: 25px;
+  text-align: center;
+}
+
+.heda {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+p {
+  font-size: 20px;
+  align-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+  }
+
+   
+  

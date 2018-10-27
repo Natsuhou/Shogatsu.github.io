@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shogatsu</title>
+    <meta name="author" content="Matthew Takara">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="shogatsu.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="navigation" class="sidenav navbar-collapse">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="activities.html">Activities</a>
+        <a href="fun.html">Fun</a>
+    </div>
+    <div id="particles-js">
+        <div class="main">
+            <h2 class="display-1" style="font-size: 150px">Hello.</h2>
+        </div>
+    </div>
+    <nav class="navbar fixed-top">
+        <span style="font-size:35px;cursor:pointer; color: white;" onclick="openNav()" ondblclick="closeNav()">&#9776;</span>
+    </nav>
+    </div>
+    <div class="container" style="color: white">
+        <div class="heda">
+            <img src="user.png" class="fade-in one" alt="profile" width="250px" style="border-radius: 350px; padding-bottom: 35px">
+            <h1 class="display-3 fade-in one">
+                Shogatsu
+            </h1>
+            <hr class="fade-in one">
+        </div>
+        <div class="fade-in two">
+            <p>My name is Matthew Takara and I try to make cool stuff.</p>
+            <p>As of <b>10/16/18</b>, I am a senior at a high school in Honolulu, Hawaii.</p>
+            <p>I aspire to make the world a better place through the use of technology.</p>
+            <h1 class="display-4" style="font-size: 50px; text-align: center; padding-top: 25px">Hobbies</h1>
+            <hr style="width: 30%">
+        </div>
+
+    </div>
+</body>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="particles.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("navigation").style.width = "200px";
+    }
+    function closeNav() {
+        document.getElementById("navigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }  
+</script>
+
+</html>
