@@ -1,65 +1,70 @@
-/* The side navigation menu */
+
+body /* Background Fade */{ 
+  animation: 500s ease-in-out infinite color-change;
+}
+
+p /* Use for most descriptions */ {
+  font-size: 2vw;
+  align-content: center;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+
 .sidenav {
-    height: 30%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.075); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 65px; /* Place content 60px from the top */
-    transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  background-color: rgba(255, 255, 255, 0.075); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden; 
+  padding-top: 65px; /* Place content 60px from the top */
+  transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
 .sidenav a {
-    padding: 1px 5px 5px 32px;
-    text-decoration: none;
-    font-size: 23px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
+  padding: 5px 5px 10px 55px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f7b7b7da;
-    text-decoration: none;
+  color: #000000da;
+  text-decoration: none;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-} 
-
-#particles-js {
-    height: 100vh;
-}
-.main {
-    color: #eeeeee;
-    position: absolute;
-    text-align: center;
-    top: 34%;
-    width: 100%;
-    line-height: 0.4em;
-  }
-body {
-    animation: 250s ease-in-out infinite color-change;
-  }
 
 .color {
   animation: 500s ease-in-out infinite color;
+}
+
+.main {
+  color: #eeeeee;
+  position: absolute;
+  text-align: center;
+  top: 32%;
+  width: 100%;
+  line-height: 0.4em;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+#particles-js {
+  height: 100vh;
+  width: 100vw;
 }
 
 @keyframes color-change {
@@ -83,26 +88,26 @@ body {
     }
   }
 
- @keyframes color {
-    0% {
-      background-color: rgb(190, 245, 182);
-    }
-    20% {
-      background-color: rgb(137, 243, 120);
-    }
-    40% {
-      background-color: rgb(109, 184, 98);
-    }
-    60% {
-      background-color: rgb(84, 177, 70);
-    }
-    80% {
-      background-color: rgb(71, 119, 71);
-    }
-    100% {
-      background-color: rgb(31, 107, 19);
-    }
+@keyframes color {
+  0% {
+    background-color: rgb(190, 245, 182);
   }
+  20% {
+    background-color: rgb(137, 243, 120);
+  }
+  40% {
+    background-color: rgb(109, 184, 98);
+  }
+  60% {
+    background-color: rgb(84, 177, 70);
+  }
+  80% {
+    background-color: rgb(71, 119, 71);
+  }
+  100% {
+    background-color: rgb(31, 107, 19);
+  }
+}
 
 .rounded {
   border-radius: 10%;
@@ -110,18 +115,21 @@ body {
   text-align: center;
 }
 
-.heda {
+.section {
+  text-decoration: none;
+  font-size: 7vh;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
 }
 
-p {
-  font-size: 20px;
-  align-content: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  text-align: center;
+.responsive {
+  border-radius: 25vh; 
+  padding-bottom: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
 
  
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -159,7 +167,34 @@ animation-delay: 1.5s;
   -webkit-animation-delay: 1.8s;
   -moz-animation-delay: 1.8s;
   animation-delay: 1.8s;
+}
+
+
+.infiniteFade {
+  animation: 1.8s ease-in-out infinite infinitefade;
+}
+
+@keyframes infinitefade {
+  0% {
+    opacity: 1;
   }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
 
    
   
