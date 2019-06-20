@@ -1,16 +1,7 @@
-# Matthew Takara
-Hi, welcome to my website repository.
+# Shogatsu / ooo3
+Hi, welcome to my website hosted on this wonderful website where developers and students alike, can share and learn more about code. This website mostly serves as a representation of my coding career. I say "coding career" but I'm not really majoring in computer science; rather computer engineering.
 
-## Elements 
-This website uses:
-- Bootstrap 4
-- CSS
-- HTML5/HTML
-- Particle.js (library)
+## Resources?
 
 ## To Do List
-1. Organize files by tab [ ]
-2. Add more content [ ]
-3. Refine design flaws [ ]
-4. Improve responsiveness and scalability [ ]
-5. Add a cool particle background [x]
+Make it good
